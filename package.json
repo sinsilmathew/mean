@@ -1,0 +1,22 @@
+{
+  "name": "mean1",
+  "version": "1.0.0",
+  "description": "Mean App1",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "MyBook",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "mocha": "^4.1.0",
+    "mongojs": "^2.4.1",
+    "mongoose": "^5.0.0-rc1",
+    "supertest": "^3.0.0"
+  }
+}

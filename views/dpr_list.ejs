@@ -1,0 +1,35 @@
+<% include partials/header %>
+<h1><%= title %></h1>
+<h2>List of DPR Entry</h2>
+<p>
+    <table class ="tbl">
+        <tr style="border:solid"><th>Task Name</th><th>FillingDate</th><th>Time Spent</th><th>Time Remaining</th><th>Remarks</th><th>Delete</th></tr>
+        <% dpr_list.forEach(function(dprlists){%>
+            <tr>
+                <td><li><a href="#"><%= dprlists.task_name %></li></a></td>
+                <td><li><%= dprlists.date %></li></td>
+                <td><li><%= dprlists.time_spent %></li></td>
+                <td><li><%= dprlists.time_remaining %></li></td>
+                <td><li><%= dprlists.remarks %></li></td>
+                <td><a class="deleteUser" href="#">Delete</a></td>
+            </tr>
+        <% }) %>
+    </p>
+</table>
+<style>
+    table{
+        border-collapse: collapse;
+
+    }
+    th{
+        border: solid blue;
+
+    }
+    td{
+        border: solid blue;
+
+    }
+  
+
+</style>
+<% include partials/footer %>

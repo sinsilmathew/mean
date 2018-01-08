@@ -1,0 +1,26 @@
+<% include partials/header %>
+<h1><%= title %></h1>
+<h2>New DPR Entry</h2>
+<% if(errors!=undefined){%>
+<h4>Missing Mandatory Fields</h4>
+<% } %>
+<form method="POST" action="dpr/add">
+<label>Task ID</label><br><br>
+<input type="text" name="task_id"><br><br>
+<label>Task Name</label><br><br>
+<input type="text" name="task_name"><br>
+<br>
+<label>Date</label><br><br>
+<input type="date" name="date"><br><br>
+<label>Time Spent</label><br><br>
+<input type="text" name="time_spent">
+<br><br>
+<label>Time Remaining</label><br><br>
+<input type="text" name="time_remaining">
+<br><br>
+<label>Remarks</label><br><br>
+<textarea name="remarks"></textarea>
+<br><br>
+<input type="submit" value="Add DPR">
+</form>
+<% include partials/footer %>

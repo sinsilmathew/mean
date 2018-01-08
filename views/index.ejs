@@ -1,0 +1,20 @@
+<% include partials/header %>
+<h1><%= title %></h1>
+<p>
+    <% colors.forEach(function(colorz){%>
+        <li><a href="#"><%= colorz.color %></li></a>
+    <% }) %>
+</p>
+<h2>Add new Colors</h2>
+<% if(errors!=undefined){%>
+<h4>Missing Mandatory Fields</h4>
+<% } %>
+<form method="POST" action="colors/add">
+<label>Color</label><br>
+<input type="text" name="color"><br>
+<label>Color Code</label><br>
+<input type="text" name="code"><br>
+<br>
+<input type="submit" value="Add Color">
+</form>
+<% include partials/footer %>
