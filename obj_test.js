@@ -19,3 +19,12 @@ console.log(obj3.a);
 const obj4 = Object.assign(obj2);
 console.log(obj3);
 console.log(obj4);
+
+const obj={
+    add:function(x,y){
+        var a=x;
+        var b=y;
+        console.log(a+b);
+    }
+};
+obj.add(100,20);
